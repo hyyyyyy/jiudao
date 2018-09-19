@@ -1,1 +1,19 @@
 /* pages/classic/classic.wxss */
+.chunk {
+  width: 100px;
+  height: 100px;
+
+}
+.color{
+  background: pink
+}
+.color2{
+  background: gold
+}
+.color3{
+  background: greenyellow
+}
+/* 弹性容器，默认里面inline-block */
+.cont{
+  display: flex;
+}

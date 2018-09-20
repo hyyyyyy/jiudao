@@ -1,5 +1,1 @@
-<view class='cont'>
-  <view class='chunk color'></view>
-  <view class='chunk color2'></view>
-  <view class='chunk color3'></view>
-</view>
+<v-like></v-like>

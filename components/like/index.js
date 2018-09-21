@@ -28,7 +28,14 @@ Component({
    */
   methods: {
     onlike:function(event){
-      console.log(123)
+      let like = this.properties.like
+      let count = this.properties.count
+      count = like?count-1:count+1
+      // console.log(count)
+      this.setData({
+        count:count,
+        like:!like
+      })
     }
   }
 })

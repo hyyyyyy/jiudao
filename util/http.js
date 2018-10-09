@@ -1,4 +1,4 @@
-import {config} from '/config.js'
+import {config} from '../config.js'
 
 class HTTP{
   request(params){
@@ -12,21 +12,29 @@ class HTTP{
         'content-type': 'application/json',
         appkey: config.appkey
       },
-      method: parmas.method,
+      method: params.method,
       success: (res)=>{
-        let code = res.statusCode
+        let code = res.statusCode.toString()
         if (code.startsWith('2')){
-
+          params.success(res.data)
         }else{
-
+          wx.showToast({
+            title:'错误',
+            icon:'none',
+            duration:2000
+          })
         }
       },
       fail: (err)=>{
-
+        wx.showToast({
+          title: '错误',
+          icon: 'none',
+          duration: 2000
+        })
       }
     })
   }
   
 }
 
-export {HTTP}
+export { HTTP }

@@ -16,7 +16,7 @@ class HTTP{
       success: (res)=>{
         let code = res.statusCode.toString()
         if (code.startsWith('2')){
-          params.success(res.data)
+          params.success && params.success(res.data)
         }else{
           wx.showToast({
             title:'错误',

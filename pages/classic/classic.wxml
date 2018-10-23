@@ -1,2 +1,3 @@
+<v-epsoide index = "{{classic.index}}"></v-epsoide>
 <v-like bindlike='onlike' like="{{classic.like_status}}" count="{{classic.fav_nums}}"></v-like>
 <v-movie img="{{classic.image}}" content="{{classic.content}}"></v-movie>

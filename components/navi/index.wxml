@@ -1,0 +1,6 @@
+<!--components/navi/index.wxml-->
+<view>
+  <image></image>
+  <text></text>
+  <image></image>
+</view>

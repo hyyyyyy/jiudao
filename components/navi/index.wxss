@@ -1,4 +1,3 @@
-/* components/navi/index.wxss */
 .container{
     width:600rpx;
     height:80rpx;
@@ -8,15 +7,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.icon{
+  }
+  
+  .icon{
     height:80rpx;
     width:80rpx;
-}
-
-.title{
+  }
+  
+  .title{
     font-size:28rpx;
-}
+  }
   
   
